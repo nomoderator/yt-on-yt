@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "sourceMap": true,
+    "types": ["chrome", "node"],
+    "typeRoots": ["node_modules/@types"],
+    "moduleResolution": "node",
+    "lib": ["es2019", "dom"],
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "baseUrl": "./src",
+    "outDir": "./build",
+    "skipLibCheck": true,
+    "paths": {
+      "lib-models/*": ["models/*"],
+      "lib-utils/*": ["utils/*"],
+      "lib-style": ["style/index.ts"],
+      "lib-manifest/*": ["manifest/*"]
+    }
+  },
+  "include": ["src", "typings.d.ts"],
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
+}

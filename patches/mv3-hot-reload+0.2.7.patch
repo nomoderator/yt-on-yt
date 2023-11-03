@@ -1,0 +1,13 @@
+diff --git a/node_modules/mv3-hot-reload/out/src/content.js b/node_modules/mv3-hot-reload/out/src/content.js
+index 6758e7c..e187194 100644
+--- a/node_modules/mv3-hot-reload/out/src/content.js
++++ b/node_modules/mv3-hot-reload/out/src/content.js
+@@ -6,6 +6,8 @@ if (utils_1.isDev) {
+     ws.addEventListener('message', (event) => {
+         if (event.data === utils_1.Message.FileChange) {
+             chrome.runtime.sendMessage(utils_1.Message.Reload);
++            location.reload()
+         }
+     });
+ }
++
