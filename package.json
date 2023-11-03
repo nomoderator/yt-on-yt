@@ -6,11 +6,10 @@
   "private": true,
   "sideEffects": false,
   "engines": {
-    "node": ">=16.18.0",
-    "yarn": "1.22.19"
+    "node": "18.18.2"
   },
   "volta": {
-    "node": "16.18.0"
+    "node": "18.18.2"
   },
   "scripts": {
     "publish:chrome": "node scripts/publish/chrome.mjs",
